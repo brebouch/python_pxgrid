@@ -1,0 +1,42 @@
+investigate:
+  hostname: investigate.api.umbrella.com
+  key: d4dd841e-840e-45cf-ba77-987396b4a615
+amp4e:
+  api_key: 9906f827-6a95-4c4e-8232-fd87443c27b6
+  client_id: e8dbf5d8553ed72b01c0
+  hostname: api.amp.cisco.com
+fmc:
+  hostname: fmc.ciscofedsec.com
+  password: 'Cisco!2345'
+  user: admin
+ise:
+  nodename: GalaxyDevHost
+  description: 'Development Host'
+  password: ''
+  pxgridhostname: isepxgrid.ciscofedsec.com
+  pxclient_cert: 'pxgrid/certs/galaxy.ciscofedsec.com_192.168.30.42.cer'
+  pxclient_key: 'pxgrid/certs/galaxy.ciscofedsec.com_192.168.30.42.key'
+  pxclient_pass: 'Cisco12345'
+  pxclient_ca: 'pxgrid/certs/CertificateServicesRootCA-isepan01_.cer'
+  iseroot_ca: 'pxgrid/certs/ciscofedsec-ROOTCA-CA_.cer'
+smc:
+  hostname: smc.ciscofedsec.com
+  password: 'Cisco!2345'
+  user: admin
+  tenant_id: "102"
+cognitive:
+  feed: WEBFLOWS_CTAXXXXXXXXXXXX_V3 [replace with your feed]
+  user: [created at https://cta.eu.amp.cisco.com/CWSP/customer]
+  password: [created at https://cta.eu.amp.cisco.com/CWSP/customer]
+  service: https://taxii.cloudsec.sco.cisco.com/skym-taxii-ws/PollService
+  base64: [username:password encoded to Base64]
+threatgrid:
+  hostname: panacea.threatgrid.com
+  key: [created at https://panacea.threatgrid.com]
+umbrella:
+  hostname: s-platform.api.opendns.com
+  key: [created at https://dashboard.umbrella.com/o/2027680/#/admin/apikeys]
+  secret: [created at https://dashboard.umbrella.com/o/2027680/#/admin/apikeys]
+webex_teams:
+  token: [found at https://developer.webex.com/docs/api/getting-started]
+  irt_room: [Replace with the Room ID for your Incident Reponse Team Room]
