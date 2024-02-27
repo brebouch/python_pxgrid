@@ -2,17 +2,16 @@ import base64
 import json
 import urllib.request
 
+
 class PxgridControl:
     def __init__(self, config):
         self.config = config
 
     def send_rest_request(self, url_suffix, payload):
         url = 'https://' + \
-            self.config.get_host_name() + \
-            ':8910/pxgrid/control/' + url_suffix
-        #print("pxgrid url=" + url)
+              self.config.get_host_name() + \
+              ':8910/pxgrid/control/' + url_suffix
         json_string = json.dumps(payload)
-        #print('  request=' + json_string)
         handler = urllib.request.HTTPSHandler(
             context=self.config.get_ssl_context())
         opener = urllib.request.build_opener(handler)
@@ -25,7 +24,7 @@ class PxgridControl:
         rest_request.add_header('Authorization', 'Basic ' + b64)
         rest_response = opener.open(rest_request)
         response = rest_response.read().decode()
-        #print('  response=' + response)
+        # print('  response=' + response)
         return json.loads(response)
 
     def account_activate(self):

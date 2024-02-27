@@ -2,6 +2,7 @@ import argparse
 import ssl
 import yaml
 
+
 class Config:
     def __init__(self):
         with open("./config.yml", 'r') as stream:
@@ -18,7 +19,7 @@ class Config:
 
     def get_description(self):
         return self.config['ise']['description']
-    
+
     def get_password(self):
         if self.config['ise']['password'] is not None:
             return self.config['ise']['password']
